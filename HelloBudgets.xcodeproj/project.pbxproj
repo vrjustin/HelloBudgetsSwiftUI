@@ -16,6 +16,7 @@
 		1A6D99B72C8884B000562D09 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99B62C8884B000562D09 /* CoreDataManager.swift */; };
 		1A6D99BA2C88862A00562D09 /* AddBudgetCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99B92C88862A00562D09 /* AddBudgetCategoryView.swift */; };
 		1A6D99BD2C88896A00562D09 /* NumberFormatter+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99BC2C88896A00562D09 /* NumberFormatter+Extenions.swift */; };
+		1A6D99BF2C88952000562D09 /* BudgetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99BE2C88952000562D09 /* BudgetListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		1A6D99B62C8884B000562D09 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		1A6D99B92C88862A00562D09 /* AddBudgetCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetCategoryView.swift; sourceTree = "<group>"; };
 		1A6D99BC2C88896A00562D09 /* NumberFormatter+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extenions.swift"; sourceTree = "<group>"; };
+		1A6D99BE2C88952000562D09 /* BudgetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1A6D99B92C88862A00562D09 /* AddBudgetCategoryView.swift */,
+				1A6D99BE2C88952000562D09 /* BudgetListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A6D99A32C8881E300562D09 /* ContentView.swift in Sources */,
+				1A6D99BF2C88952000562D09 /* BudgetListView.swift in Sources */,
 				1A6D99A12C8881E300562D09 /* HelloBudgetsApp.swift in Sources */,
 				1A6D99BA2C88862A00562D09 /* AddBudgetCategoryView.swift in Sources */,
 				1A6D99BD2C88896A00562D09 /* NumberFormatter+Extenions.swift in Sources */,
