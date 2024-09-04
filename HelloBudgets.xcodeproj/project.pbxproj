@@ -14,6 +14,8 @@
 		1A6D99B02C88829400562D09 /* BudgetModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99AE2C88829400562D09 /* BudgetModel.xcdatamodeld */; };
 		1A6D99B42C8883D900562D09 /* BudgetCategorty+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99B32C8883D900562D09 /* BudgetCategorty+CoreDataClass.swift */; };
 		1A6D99B72C8884B000562D09 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99B62C8884B000562D09 /* CoreDataManager.swift */; };
+		1A6D99BA2C88862A00562D09 /* AddBudgetCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99B92C88862A00562D09 /* AddBudgetCategoryView.swift */; };
+		1A6D99BD2C88896A00562D09 /* NumberFormatter+Extenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99BC2C88896A00562D09 /* NumberFormatter+Extenions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		1A6D99AF2C88829400562D09 /* BudgetModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetModel.xcdatamodel; sourceTree = "<group>"; };
 		1A6D99B32C8883D900562D09 /* BudgetCategorty+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BudgetCategorty+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1A6D99B62C8884B000562D09 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		1A6D99B92C88862A00562D09 /* AddBudgetCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetCategoryView.swift; sourceTree = "<group>"; };
+		1A6D99BC2C88896A00562D09 /* NumberFormatter+Extenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extenions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 		1A6D999F2C8881E300562D09 /* HelloBudgets */ = {
 			isa = PBXGroup;
 			children = (
+				1A6D99BB2C88895800562D09 /* Extensions */,
+				1A6D99B82C88861C00562D09 /* Views */,
 				1A6D99B52C8884A200562D09 /* Managers */,
 				1A6D99B12C8883BB00562D09 /* Models */,
 				1A6D99A02C8881E300562D09 /* HelloBudgetsApp.swift */,
@@ -90,6 +96,22 @@
 				1A6D99B62C8884B000562D09 /* CoreDataManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		1A6D99B82C88861C00562D09 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A6D99B92C88862A00562D09 /* AddBudgetCategoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A6D99BB2C88895800562D09 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1A6D99BC2C88896A00562D09 /* NumberFormatter+Extenions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +186,8 @@
 			files = (
 				1A6D99A32C8881E300562D09 /* ContentView.swift in Sources */,
 				1A6D99A12C8881E300562D09 /* HelloBudgetsApp.swift in Sources */,
+				1A6D99BA2C88862A00562D09 /* AddBudgetCategoryView.swift in Sources */,
+				1A6D99BD2C88896A00562D09 /* NumberFormatter+Extenions.swift in Sources */,
 				1A6D99B02C88829400562D09 /* BudgetModel.xcdatamodeld in Sources */,
 				1A6D99B72C8884B000562D09 /* CoreDataManager.swift in Sources */,
 				1A6D99B42C8883D900562D09 /* BudgetCategorty+CoreDataClass.swift in Sources */,
