@@ -24,7 +24,14 @@ struct ContentView: View {
             VStack {
                 Text(total as NSNumber, formatter: NumberFormatter.currency)
                     .fontWeight(.bold)
-                BudgetListView(budgetCategoryResults: budgetCategoryResults)
+                BudgetListView(budgetCategoryResults: budgetCategoryResults) { budgetCategory in
+                    viewContext.delete(budgetCategory)
+                    do {
+                        try viewContext.save()
+                    } catch {
+                        print(error)
+                    }
+                }
             }
             .sheet(isPresented: $isPresented, content: {
                 AddBudgetCategoryView()
