@@ -11,6 +11,9 @@
 		1A6D99A32C8881E300562D09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99A22C8881E300562D09 /* ContentView.swift */; };
 		1A6D99A52C8881E400562D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6D99A42C8881E400562D09 /* Assets.xcassets */; };
 		1A6D99A82C8881E400562D09 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6D99A72C8881E400562D09 /* Preview Assets.xcassets */; };
+		1A6D99B02C88829400562D09 /* BudgetModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99AE2C88829400562D09 /* BudgetModel.xcdatamodeld */; };
+		1A6D99B42C8883D900562D09 /* BudgetCategorty+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99B32C8883D900562D09 /* BudgetCategorty+CoreDataClass.swift */; };
+		1A6D99B72C8884B000562D09 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99B62C8884B000562D09 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		1A6D99A22C8881E300562D09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A6D99A42C8881E400562D09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A6D99A72C8881E400562D09 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A6D99AF2C88829400562D09 /* BudgetModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetModel.xcdatamodel; sourceTree = "<group>"; };
+		1A6D99B32C8883D900562D09 /* BudgetCategorty+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BudgetCategorty+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A6D99B62C8884B000562D09 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +57,13 @@
 		1A6D999F2C8881E300562D09 /* HelloBudgets */ = {
 			isa = PBXGroup;
 			children = (
+				1A6D99B52C8884A200562D09 /* Managers */,
+				1A6D99B12C8883BB00562D09 /* Models */,
 				1A6D99A02C8881E300562D09 /* HelloBudgetsApp.swift */,
 				1A6D99A22C8881E300562D09 /* ContentView.swift */,
 				1A6D99A42C8881E400562D09 /* Assets.xcassets */,
 				1A6D99A62C8881E400562D09 /* Preview Content */,
+				1A6D99AE2C88829400562D09 /* BudgetModel.xcdatamodeld */,
 			);
 			path = HelloBudgets;
 			sourceTree = "<group>";
@@ -65,6 +74,22 @@
 				1A6D99A72C8881E400562D09 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A6D99B12C8883BB00562D09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A6D99B32C8883D900562D09 /* BudgetCategorty+CoreDataClass.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A6D99B52C8884A200562D09 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1A6D99B62C8884B000562D09 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +164,9 @@
 			files = (
 				1A6D99A32C8881E300562D09 /* ContentView.swift in Sources */,
 				1A6D99A12C8881E300562D09 /* HelloBudgetsApp.swift in Sources */,
+				1A6D99B02C88829400562D09 /* BudgetModel.xcdatamodeld in Sources */,
+				1A6D99B72C8884B000562D09 /* CoreDataManager.swift in Sources */,
+				1A6D99B42C8883D900562D09 /* BudgetCategorty+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +372,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A6D99AE2C88829400562D09 /* BudgetModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A6D99AF2C88829400562D09 /* BudgetModel.xcdatamodel */,
+			);
+			currentVersion = 1A6D99AF2C88829400562D09 /* BudgetModel.xcdatamodel */;
+			name = BudgetModel.xcdatamodeld;
+			path = /Users/jmaronde/Documents/repos/iOSDEVBootCamp/HelloBudgets/HelloBudgets/BudgetModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1A6D99952C8881E300562D09 /* Project object */;
 }
