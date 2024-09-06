@@ -35,6 +35,15 @@ struct BudgetDetailView: View {
         }
     }
     
+    private func deleteTransaction(_ transaction: Transaction) {
+        viewContext.delete(transaction)
+        do {
+            try viewContext.save()
+        } catch {
+            print(error)
+        }
+    }
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -68,7 +77,7 @@ struct BudgetDetailView: View {
             //BudgetSummaryView
             BudgetSummaryView(budgetCategory: budgetCategory)
             
-            TransactionListView(request: BudgetCategory.transactionsByCategoryRequest(budgetCategory))
+            TransactionListView(request: BudgetCategory.transactionsByCategoryRequest(budgetCategory), onDeleteTransaction: deleteTransaction)
             
             Spacer()
         }.padding()
