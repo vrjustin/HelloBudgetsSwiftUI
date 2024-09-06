@@ -26,7 +26,7 @@ enum SheetAction: Identifiable {
 struct ContentView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
-    @FetchRequest(sortDescriptors: []) private var budgetCategoryResults: FetchedResults<BudgetCategory>
+    @FetchRequest(fetchRequest: BudgetCategory.all) var budgetCategoryResults
     @State private var isPresented: Bool = false
     @State private var sheetAction: SheetAction?
 
@@ -54,8 +54,11 @@ struct ContentView: View {
             NavigationStack {
                 VStack {
                     
-                    Text(total as NSNumber, formatter: NumberFormatter.currency)
-                        .fontWeight(.bold)
+                    HStack {
+                        Text("Total Budget: ")
+                        Text(total as NSNumber, formatter: NumberFormatter.currency)
+                            .fontWeight(.bold)
+                    }
                     
                     BudgetListView(budgetCategoryResults: budgetCategoryResults, onDeleteBudgetCategory: deleteBudgetCategory, onEditBudgetCategory: editBudgetCategory)
                 }

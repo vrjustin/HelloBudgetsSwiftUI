@@ -30,6 +30,8 @@ struct BudgetDetailView: View {
             
             budgetCategory.addToTransactions(transaction)
             try viewContext.save()
+            title = ""
+            total = ""
         } catch {
             print(error)
         }
@@ -73,11 +75,15 @@ struct BudgetDetailView: View {
                     Spacer()
                 }
             }
+            .frame(maxHeight: .infinity)
+            .padding([.bottom], 20)
             
             //BudgetSummaryView
-            BudgetSummaryView(budgetCategory: budgetCategory)
+            VStack {
+                BudgetSummaryView(budgetCategory: budgetCategory)
+                TransactionListView(request: BudgetCategory.transactionsByCategoryRequest(budgetCategory), onDeleteTransaction: deleteTransaction)
+            }
             
-            TransactionListView(request: BudgetCategory.transactionsByCategoryRequest(budgetCategory), onDeleteTransaction: deleteTransaction)
             
             Spacer()
         }.padding()

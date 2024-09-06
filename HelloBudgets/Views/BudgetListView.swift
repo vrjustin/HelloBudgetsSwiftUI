@@ -27,10 +27,12 @@ struct BudgetListView: View {
                                     .fontWeight(.bold)
                                     .foregroundColor(budgetCategory.overSpent ? .red : .green)
                             }
-                        }.contentShape(Rectangle())
-                            .onLongPressGesture {
-                                onEditBudgetCategory(budgetCategory)
-                            }
+                        }
+                        .onLongPressGesture {
+                            onEditBudgetCategory(budgetCategory)
+                        }
+                        .contentShape(Rectangle())
+                            
                             
                     }
                 }.onDelete { indexSet in
