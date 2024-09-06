@@ -19,6 +19,8 @@
 		1A6D99BF2C88952000562D09 /* BudgetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99BE2C88952000562D09 /* BudgetListView.swift */; };
 		1A6D99C32C89B67000562D09 /* Transaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99C22C89B67000562D09 /* Transaction+CoreDataClass.swift */; };
 		1A6D99C52C89B72800562D09 /* BudgetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99C42C89B72800562D09 /* BudgetDetailView.swift */; };
+		1A6D99C72C8B0B6700562D09 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99C62C8B0B6700562D09 /* TransactionListView.swift */; };
+		1A6D99C92C8B0E2D00562D09 /* BudgetSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6D99C82C8B0E2D00562D09 /* BudgetSummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		1A6D99BE2C88952000562D09 /* BudgetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListView.swift; sourceTree = "<group>"; };
 		1A6D99C22C89B67000562D09 /* Transaction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1A6D99C42C89B72800562D09 /* BudgetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetDetailView.swift; sourceTree = "<group>"; };
+		1A6D99C62C8B0B6700562D09 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		1A6D99C82C8B0E2D00562D09 /* BudgetSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				1A6D99B92C88862A00562D09 /* AddBudgetCategoryView.swift */,
 				1A6D99BE2C88952000562D09 /* BudgetListView.swift */,
 				1A6D99C42C89B72800562D09 /* BudgetDetailView.swift */,
+				1A6D99C62C8B0B6700562D09 /* TransactionListView.swift */,
+				1A6D99C82C8B0E2D00562D09 /* BudgetSummaryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,8 +205,10 @@
 				1A6D99BA2C88862A00562D09 /* AddBudgetCategoryView.swift in Sources */,
 				1A6D99C32C89B67000562D09 /* Transaction+CoreDataClass.swift in Sources */,
 				1A6D99BD2C88896A00562D09 /* NumberFormatter+Extenions.swift in Sources */,
+				1A6D99C92C8B0E2D00562D09 /* BudgetSummaryView.swift in Sources */,
 				1A6D99C52C89B72800562D09 /* BudgetDetailView.swift in Sources */,
 				1A6D99B02C88829400562D09 /* BudgetModel.xcdatamodeld in Sources */,
+				1A6D99C72C8B0B6700562D09 /* TransactionListView.swift in Sources */,
 				1A6D99B72C8884B000562D09 /* CoreDataManager.swift in Sources */,
 				1A6D99B42C8883D900562D09 /* BudgetCategorty+CoreDataClass.swift in Sources */,
 			);
